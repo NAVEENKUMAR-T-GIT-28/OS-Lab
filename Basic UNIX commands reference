@@ -1,0 +1,46 @@
+# Date & Time
+date          # full date/time
+date +%m      # month number
+date +%h      # month name
+date +%d      # day
+date +%y      # year (2-digit)
+date +%H      # hour
+date +%M      # minute
+date +%S      # second
+
+# Calendar
+cal           # current month
+cal 2025      # full year
+cal 8 2025    # specific month
+
+# Files & Directories
+ls            # list files
+ls -l         # long listing
+mkdir mydir   # create directory
+cd mydir      # change directory
+cd ..         # go up one level
+pwd           # print working directory
+rmdir mydir   # remove empty directory
+cat >file1    # create file (Ctrl+D to save)
+cat file1     # view file
+cp src dest   # copy file
+mv src dest   # move/rename file
+rm file1      # delete file
+
+# Text utilities
+head -5 file  # first 5 lines
+tail -5 file  # last 5 lines
+wc file       # lines, words, chars
+sort file     # sort contents
+uniq file     # remove duplicates
+cut -c3 file  # cut column 3
+echo "hello"  # print message
+
+# Users
+who           # all logged-in users
+whoami        # current user
+
+# Piping
+who | wc -l   # count logged-in users
+cat f|sort|uniq # sort and deduplicate
+chmod u+x f   # add execute permission
